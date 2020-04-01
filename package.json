@@ -1,0 +1,12 @@
+{
+  "name": "sketches",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Chase McCoy <chasem000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "canvas-sketch": "^0.7.3",
+    "canvas-sketch-cli": "^1.11.7",
+    "seed-random": "^2.2.0"
+  }
+}
