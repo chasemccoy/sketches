@@ -11,7 +11,6 @@ const totalCircles = 500;
 const gap = 20;
 const createCircleAttempts = 500;
 
-
 const sketch = ({width, height}) => {
   const createAndDrawCircle = () => {
     var newCircle;

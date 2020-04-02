@@ -10,6 +10,7 @@
     "seed-random": "^2.2.0"
   },
   "scripts": {
-    "new": "yarn canvas-sketch --new --open"
+    "new": "yarn canvas-sketch --new --open",
+    "start": "yarn canvas-sketch"
   }
 }
