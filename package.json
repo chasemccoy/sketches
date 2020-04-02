@@ -8,5 +8,8 @@
     "canvas-sketch": "^0.7.3",
     "canvas-sketch-cli": "^1.11.7",
     "seed-random": "^2.2.0"
+  },
+  "scripts": {
+    "new": "yarn canvas-sketch --new --open"
   }
 }

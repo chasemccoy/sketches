@@ -42,21 +42,11 @@ const sketch = ({ width, height, render }) => {
 	// Background color
 	const background = 'white';
 
-	// Provide an initial generation
-	generate();
-
-	// And update every X milliseconds
-	// setInterval(generate, 1500);
-
 	return function(props) {
 		const { canvas, context, width, height } = props;
 
-		// The background color of our paper
-		context.fillStyle = background;
-		context.fillRect(0, 0, width, height);
-
-		// Draw all layers with their true colours
-		drawLayers(props, false);
+		// Draw all layers with their true colors
+		drawLayers(props);
 
 		// Now let's create a composite for all our layers
 		context.globalCompositeOperation = 'multiply';
@@ -66,21 +56,6 @@ const sketch = ({ width, height, render }) => {
 		});
 		// Revert to default blending
 		context.globalCompositeOperation = 'source-over';
-
-		// And now we draw each layer as a white/black mask
-		drawLayers(props, true);
-
-		// Export the composite, each layer mask, and the colors JSON
-		// return [
-		// 	// The composite with a custom file name
-		// 	{ data: canvas, file: `${currentSeed}-composite.png` },
-		// 	// Each individual layer as a black/white mask
-		// 	...layers.map((layer, i) => {
-		// 		return { data: layer.canvas, file: `${currentSeed}-layer-${i}.png` };
-		// 	}),
-		// 	// Some colour/ink data to go along with each layer
-		// 	{ data: serialize(), file: `${currentSeed}-layers.json` },
-		// ];
 	};
 
 	// Get a random float between [min..max] range
@@ -119,7 +94,6 @@ const sketch = ({ width, height, render }) => {
 						context.stroke();
 					};
 			}
-			return [x, y, size, size];
 		});
 	}
 
@@ -136,13 +110,12 @@ const sketch = ({ width, height, render }) => {
 			layer.alpha = i === softIndex ? 0.75 : 1;
 			layer.shapes = createShapes(Math.floor(random(5, 20)));
 		});
-    
-		render();
 	}
 
 	// Draw each layer to its own canvas buffer
 	function drawLayers(props) {
 		const { canvasWidth, canvasHeight, width, height, scaleX, scaleY } = props;
+		generate()
 
 		// Draw each layer on top to create a final composite
 		layers.forEach(layer => {
