@@ -767,10 +767,10 @@ camel-case@3.0.x:
     no-case "^2.2.0"
     upper-case "^1.1.1"
 
-canvas-sketch-cli@^1.11.7:
-  version "1.11.7"
-  resolved "https://registry.yarnpkg.com/canvas-sketch-cli/-/canvas-sketch-cli-1.11.7.tgz#03f2b22c71a56b7c872c637f08c535c8893698d3"
-  integrity sha512-Ub+HKPm4TcimeY9CCTpoHk7iprkA+A7LeZdJ8Qku04M8dzujgALwqv5lXji9y284LG7Yt7/QMlxykPiSxr/1Cg==
+canvas-sketch-cli@^1.11.9:
+  version "1.11.9"
+  resolved "https://registry.yarnpkg.com/canvas-sketch-cli/-/canvas-sketch-cli-1.11.9.tgz#153a5123caddbb8162fe17f9906cc7baee3590b8"
+  integrity sha512-BobX3AVpLA2f3mm/qxIrL5yg3u4tsAj/PJdzCC2kvGrpI+wuSG1r0koAic+G93R9gflO9HJkktGHRrhYR38VdQ==
   dependencies:
     "@babel/core" "^7.4.3"
     "@babel/plugin-syntax-async-generators" "^7.0.0"
@@ -789,7 +789,6 @@ canvas-sketch-cli@^1.11.7:
     cross-spawn "^6.0.5"
     dateformat "^3.0.3"
     defined "^1.0.0"
-    downloads-folder "^1.0.1"
     duplexer2 "^0.1.4"
     esmify "^2.1.1"
     filenamify "^2.1.0"
@@ -819,10 +818,10 @@ canvas-sketch-cli@^1.11.7:
     terser "^3.7.6"
     through2 "^2.0.3"
 
-canvas-sketch@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/canvas-sketch/-/canvas-sketch-0.7.3.tgz#282aea761f1088c36cebcc878227dc3f902d45ae"
-  integrity sha512-EXZtiPxRS9Cb2IPsHTgeoS3o2IdKjmMDxE+a8O8W9vbKd33kcOxqrWFxQsUCRucBcB5v08CIu2CuX1W+/iAhgQ==
+canvas-sketch@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/canvas-sketch/-/canvas-sketch-0.7.4.tgz#358e4efc8b011e9f13abfb0fcb2ffc8eed1fe255"
+  integrity sha512-CSmzohS6PXFctDnPmNU0r4Mj9AGXsaOZciZv5Bh1Cb0lhIDaaAXsTkQKFrY1HzhUfNWwqoXUcjwcXAIWKdCxTA==
   dependencies:
     convert-length "^1.0.1"
     dateformat "^3.0.3"
@@ -1314,11 +1313,6 @@ dotignore@~0.1.2:
   integrity sha512-UGGGWfSauusaVJC+8fgV+NVvBXkCTmVv7sk6nojDZZvuOUNGUy0Zk4UpHQD6EDjS0jpBwcACvH4eofvyzBcRDw==
   dependencies:
     minimatch "^3.0.4"
-
-downloads-folder@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/downloads-folder/-/downloads-folder-1.0.2.tgz#85d437d4c86dd3681863ee19b67861acc4771540"
-  integrity sha512-qhOCuuBjhfGPfFwbPpLnrgi5CSTy9Xzej7AgL5E4iSAeVdNNlvAacoBaBQgy8MYOakmT9vazImCHYGCEaaRUgg==
 
 duplexer2@^0.1.2, duplexer2@^0.1.4, duplexer2@~0.1.0, duplexer2@~0.1.2:
   version "0.1.4"
@@ -2867,6 +2861,11 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
+
+p5@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-1.1.9.tgz#b33692100f991b993128fd8e3324cc56adad68b2"
+  integrity sha512-gU+UBEAXLGt3RQFzTtsKijF+eBidweIqRrg51AniuLG8LKHzylrB5ilIOzyDgcR1/hWt6danWPArjaVtXHWfWg==
 
 pad-left@^2.0.0, pad-left@^2.1.0:
   version "2.1.0"
