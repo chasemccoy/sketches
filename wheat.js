@@ -5,7 +5,8 @@ new p5()
 
 const settings = {
   dimensions: [800, 800],
-  p5: true
+  p5: true,
+  pixelRatio: 2
 }
 
 const sketch = () => {
@@ -43,27 +44,6 @@ const sketch = () => {
       x += lineLength
     }
   }
-
-  // return ({ width, height }) => {
-  //   if (x1 < 640 || x2 < 640) {
-  //     line(x1, y, x2 + paddingX, y + paddingY)
-  //     y = y + paddingY
-
-  //     if (y > 620) {
-  //       x1 = x1 + paddingX
-  //       x2 = x2 + paddingX
-  //       paddingX = random(0, 35)
-  //       y = 50
-  //     }
-  //   }
-
-  //   if (frameCount > random(0, 35)) {
-  //     c = random(colors)
-  //     stroke(color(c))
-  //     paddingY = random(0, 35)
-  //     frameCount = 0
-  //   }
-  // }
 }
 
 canvasSketch(sketch, settings)

@@ -6,6 +6,7 @@ new p5()
 const settings = {
   dimensions: [700, 700],
   p5: true,
+  pixelRatio: 2
 }
 
 const sketch = () => {
@@ -14,7 +15,7 @@ const sketch = () => {
     background('#ededed')
 
     // slow down the animation loop to 1 frame per second
-    frameRate(1)
+    // frameRate(1)
 
     // randomly choose a whole number between 50 ... 250
     var count = floor(random(50, 250))
